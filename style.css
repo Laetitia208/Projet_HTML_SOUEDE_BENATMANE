@@ -168,3 +168,74 @@ h2{
 .footer-columns strong {
     margin-bottom: 5px;
 }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+    }
+ 
+    .equipe-section {
+      padding: 40px;
+      max-width: 960px;
+    }
+ 
+    .equipe-section h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 28px;
+    }
+ 
+    .equipe-grid {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+ 
+    .membre {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 220px;
+    }
+ 
+    .membre-photo {
+      width: 180px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      background: #e0e0e0;
+    }
+ 
+    .membre-photo-placeholder {
+      width: 180px;
+      height: 200px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      background: #d0d0d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 13px;
+    }
+ 
+    .membre-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 4px;
+    }
+ 
+    .membre-role {
+      font-size: 13px;
+      color: #444;
+      line-height: 1.5;
+    }
