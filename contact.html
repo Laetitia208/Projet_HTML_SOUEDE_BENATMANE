@@ -1,65 +1,100 @@
-<html>  
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-<a href="https://www.efrei.fr/"><img src="logo-efrei.png" alt="EFREI" width="160" height="60"></a>
-  <ul class="nav-links">
-    <li><a href="accueil.html">Accueil</a></li>
-    <li><a href="cours_et_formations.html">Cours &amp; formations</a></li>
-    <li><a href="equipe.html">Equipe enseignante</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+    <header>
+        <nav>
+            <a href="https://www.efrei.fr/"><img src="logo-efrei.png" alt="EFREI" width="160" height="60"></a>
+            <ul class="nav-links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="cours_et_formations.html">Cours &amp; formations</a></li>
+                <li><a href="equipe.html">Equipe enseignante</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-<div class="container">
+    <div class="container">
 
-    <div class="top card hidden">
-        <div class="contact">
-            <h1>Contacts</h1>
-            <p><span class="blue">Par mail</span> : assist@efrei.net</p>
-            <p><span class="blue">Par téléphone</span> : 01 23 45 67 89</p>
-            <br>
-            <img src="e135b1a3-bd6a-4859-8e22-5761271b2434.jpg" alt="Contact" width="400" height="300">
+        <div class="top card hidden">
+            <div class="contact">
+                <h1 class="hero">Contacter le département d'informatique</h1>
+                <p><span class="blue">Par mail</span> : assist@efrei.net</p>
+                <p><span class="blue">Par téléphone</span> : 01 23 45 67 89</p>
+                <br>
+                <img src="e135b1a3-bd6a-4859-8e22-5761271b2434.jpg" alt="Contact" width="400" height="300">
+            </div>
+
+
         </div>
 
+        <div class="hero">
+            <p>Si vous souhaitez être recontacté directement par un enseignant de la majeure qui vous intéresse,
+                remplissez
+                les informations suivantes :</p>
+        </div>
+
+        <form>
+            <fieldset>
+                <legend>Vos informations</legend>
+
+                <label>Nom :</label>
+                <input type="text" name="nom"><br><br>
+
+                <label>Prénom :</label>
+                <input type="text" name="prenom"><br><br>
+
+                <label>Majeure qui vous inréresse :</label>
+                <select name="majeure">
+                    <option>Data Science</option>
+                    <option>Information Technology</option>
+                    <option>Systèmes embarqués</option>
+                    <option>Sécurité et réseau</option>
+                </select>
+
+                <label>Adresse mail :</label>
+                <input type="text" name="mail"><br><br>
+            </fieldset>
+            <input type="submit" value="Envoyer">
+        </form>
+
+        <div class="footer">
+            <div class="footer-left">
+                <div class="efreifooter"><strong>Efrei Panthéon Assas</strong></div>
+                <p>Grande école d’ingénieur en Informatique</p>
+            </div>
+
+            <div class="footer-columns">
+                <div>
+                    <strong>Features</strong>
+                    <a href="#">Core features</a>
+                    <a href="#">Pro experience</a>
+                    <a href="#">Integrations</a>
+                </div>
+
+                <div>
+                    <strong>Learn more</strong>
+                    <a href="#">Blog</a>
+                    <a href="#">Case studies</a>
+                    <a href="#">Customer stories</a>
+                    <a href="#">Best practices</a>
+                </div>
+
+                <div>
+                    <a href="a_propos.html"><strong>À propos</strong></a>
+                </div>
+            </div>
+        </div>
 
     </div>
-
-    <div class="footer">
-        <div class="footer-left">
-            <div class="efreifooter"><strong>Efrei Panthéon Assas</strong></div>
-            <p>Grande école d’ingénieur en Informatique</p>
-        </div>
-
-        <div class="footer-columns">
-            <div>
-                <strong>Features</strong>
-                <a href="#">Core features</a>
-                <a href="#">Pro experience</a>
-                <a href="#">Integrations</a>
-            </div>
-
-            <div>
-                <strong>Learn more</strong>
-                <a href="#">Blog</a>
-                <a href="#">Case studies</a>
-                <a href="#">Customer stories</a>
-                <a href="#">Best practices</a>
-            </div>
-
-            <div>
-                <a href="a_propos.html"><strong>À propos</strong></a>
-            </div>
-        </div>
-    </div>
-
-</div>
-<script src="java.js"></script>
+    <script src="java.js"></script>
 </body>
+
 </html>
