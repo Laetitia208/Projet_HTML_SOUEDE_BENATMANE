@@ -7,6 +7,10 @@ nav {
   padding: 0 40px;
   justify-content: space-between;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+header{
+  width: 100%;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -153,6 +157,12 @@ h2 {
   margin: 10px 0;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .blue {
   color: #1a73e8;
   font-weight: bold;
@@ -292,4 +302,40 @@ body {
 .show {
   opacity: 1;
   transform: translateY(0);
+}
+
+fieldset {
+  border: 2px solid #003DA6;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+
+legend {
+  font-weight: bold;
+  color: #1565C0;
+  background-color: bisque;
+  border-radius: 20px;
+  font-size: 150%;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #1565C0;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #1565C0;
 }

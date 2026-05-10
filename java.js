@@ -11,3 +11,11 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 hiddenElements.forEach((el) => observer.observe(el));
+
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+    alert("Votre demande a bien été envoyée !");
+})
