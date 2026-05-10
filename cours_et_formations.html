@@ -88,7 +88,62 @@
         <h2>Cybersécurité & Cloud</h2>
         <p>La majeure Cybersécurité & Cloud forme des ingénieurs capables d’appréhender de manière globale les enjeux de sécurité au sein d’une organisation. Les étudiants y acquièrent des compétences pointues en protection des données, en sécurisation des infrastructures IT et en conception d’architectures cloud de confiance. Une expertise clé pour accompagner la transformation numérique des organisations en toute sécurité.</p>
     </div>
+    <div>
+        
+    </div>
 
+    <div class="hero card hidden">
+    <h1>Trouve ta majeure !</h1>
+    <p>Réponds aux questions suivantes pour découvrir la majeure qui te correspond.</p>
+    <br>
+
+    <form name="QuizMajeure" onsubmit="return false">
+
+        <fieldset>
+            <legend>Tes affinités</legend>
+
+            <p><strong>1. Quel domaine t'attire le plus ?</strong></p>
+            <ul>
+                <li><input type="radio" id="q1a" name="q1" value="data"> <label for="q1a">Les données, les statistiques et les algorithmes</label></li>
+                <li><input type="radio" id="q1b" name="q1" value="cyber"> <label for="q1b">La sécurité des systèmes et des réseaux</label></li>
+                <li><input type="radio" id="q1c" name="q1" value="soft"> <label for="q1c">Le développement logiciel et les applications</label></li>
+                <li><input type="radio" id="q1d" name="q1" value="immersive"> <label for="q1d">La réalité virtuelle et la 3D</label></li>
+                <li><input type="radio" id="q1e" name="q1" value="finance"> <label for="q1e">La finance et les marchés numériques</label></li>
+            </ul>
+            <br>
+
+            <p><strong>2. Quelles matières te plaisent ? (plusieurs réponses possibles)</strong></p>
+            <ul>
+                <li><input type="checkbox" id="q2a" name="q2" value="data"> <label for="q2a">Mathématiques et statistiques</label></li>
+                <li><input type="checkbox" id="q2b" name="q2" value="cyber"> <label for="q2b">Réseaux et cryptographie</label></li>
+                <li><input type="checkbox" id="q2c" name="q2" value="soft"> <label for="q2c">Programmation et génie logiciel</label></li>
+                <li><input type="checkbox" id="q2d" name="q2" value="immersive"> <label for="q2d">Graphisme 3D et design</label></li>
+                <li><input type="checkbox" id="q2e" name="q2" value="finance"> <label for="q2e">Économie et marchés financiers</label></li>
+            </ul>
+            <br>
+
+            <p><strong>3. Dans quel secteur tu te vois travailler ?</strong></p>
+            <ul>
+                <li><input type="radio" id="q3a" name="q3" value="data"> <label for="q3a">Intelligence artificielle, start-up tech</label></li>
+                <li><input type="radio" id="q3b" name="q3" value="cyber"> <label for="q3b">Cybersécurité, défense, banques</label></li>
+                <li><input type="radio" id="q3c" name="q3" value="soft"> <label for="q3c">Automobile, aéronautique, télécommunications</label></li>
+                <li><input type="radio" id="q3d" name="q3" value="immersive"> <label for="q3d">Jeux vidéo, simulation, patrimoine culturel</label></li>
+                <li><input type="radio" id="q3e" name="q3" value="finance"> <label for="q3e">Fintech, trading, banque d'investissement</label></li>
+            </ul>
+
+        </fieldset>
+
+        <br>
+        <button type="button" onclick="calculerMajeure()">Voir ma majeure →</button>
+
+    </form>
+
+    <br>
+    <div id="resultat-quiz" style="display:none;">
+        <p><strong>Ta majeure recommandée : </strong><span id="nom-majeure"></span></p>
+        <p id="desc-majeure"></p>
+    </div>
+</div>
 
 
     <div class="footer">
