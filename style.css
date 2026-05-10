@@ -66,6 +66,13 @@ nav {
   margin-bottom: 12px;
 }
 
+.hero h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1565C0;
+  margin-bottom: 8px;
+}
+
 .hero p {
   font-size: 18px;
   line-height: 1.9;
